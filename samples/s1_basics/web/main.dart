@@ -4,6 +4,11 @@
 
 library s1_basics.main;
 
+import 'package:angular/angular.dart';
+
+@MirrorsUsed(override: '*')
+import 'dart:mirrors';
+
 void main() {
-  // Your app starts here.
+  ngBootstrap();
 }

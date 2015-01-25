@@ -5,7 +5,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html ng-app>
   <head>
     <meta charset="utf-8">
     <title>Pirate badge</title>
@@ -13,9 +13,11 @@
   </head>
   <body>
     <h1>Pirate badge</h1>
-    
+
     <div class="widgets">
-      TO DO: Put the UI widgets here.
+      <div>
+    <input type="text" id="inputName" maxlength="15" ng-model="name">
+  </div>
     </div>
 
     <div class="badge">
@@ -23,10 +25,10 @@
         Arrr! Me name is
       </div>
       <div class="name">
-        <span id="badgeName"> </span>
+        <span id="badgeName" ng-cloak>{{name}}</span>
       </div>
     </div>
-    
+
     <script src="packages/shadow_dom/shadow_dom.min.js"></script>
     <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>
