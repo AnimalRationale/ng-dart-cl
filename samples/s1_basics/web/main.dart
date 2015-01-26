@@ -9,6 +9,8 @@ import 'package:angular/angular.dart';
 @MirrorsUsed(override: '*')
 import 'dart:mirrors';
 
+import 'package:s1_basics/pirate_module.dart';
+
 void main() {
-  ngBootstrap();
+  ngBootstrap(module: new PirateModule());
 }
