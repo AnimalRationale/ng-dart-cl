@@ -9,12 +9,14 @@ import 'dart:async' show Future;
   selector: '[badge-controller]',
   publishAs: 'ctrl')
 
+
 class BadgeController {
-    static const LABEL1 = 'Arrr! Write yer name!';
-    static const LABEL2 = 'Aye! Gimme a name!';
-    static List<String> names = [];
-      static List<String> appellations = [];
-      final Http _http;
+  static const LABEL1 = 'Arrr! Write yer name!';
+  static const LABEL2 = 'Aye! Gimme a name!';
+  static List<String> names = [];
+  static List<String> appellations = [];
+  final Http _http;
+
   PirateName pn = new PirateName();
 
   bool dataLoaded = false;
